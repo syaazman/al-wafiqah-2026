@@ -42,7 +42,7 @@ const defaultSlides = [
   },
   {
     type: 'person_simple',
-    icon: 'fa-hands-praying',
+    icon: 'fa-hands',
     badge: 'BACAAN DOA',
     title: 'Bacaan Doa',
     name: 'Ustaz Mohamad Anuar Bin Mohamad Asri',
