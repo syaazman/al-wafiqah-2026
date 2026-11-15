@@ -797,6 +797,35 @@ document.addEventListener('keydown', (e) => {
 });
 
 // =========================================================================
+// TOUCH SWIPE SUPPORT (TABLET & TELEFON)
+// =========================================================================
+let touchStartX = 0;
+let touchStartY = 0;
+
+document.addEventListener('touchstart', (e) => {
+  touchStartX = e.changedTouches[0].screenX;
+  touchStartY = e.changedTouches[0].screenY;
+  if (!isBarManuallyHidden) resetIdleTimer();
+}, { passive: true });
+
+document.addEventListener('touchend', (e) => {
+  if (isEditMode) return;
+  const drawer = document.getElementById('slide-drawer');
+  if (drawer && !drawer.classList.contains('hidden')) return;
+
+  const deltaX = e.changedTouches[0].screenX - touchStartX;
+  const deltaY = e.changedTouches[0].screenY - touchStartY;
+
+  // Pastikan leretan mendatar lebih besar daripada menegak (minima 50px)
+  if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 50) {
+    if (deltaX < 0) {
+      nextSlide(); // Swipe ke kiri -> slaid seterusnya
+    } else {
+      prevSlide(); // Swipe ke kanan -> slaid sebelum
+    }
+  }
+}, { passive: true });
+// =========================================================================
 // INIT
 // =========================================================================
 window.addEventListener('DOMContentLoaded', () => {
