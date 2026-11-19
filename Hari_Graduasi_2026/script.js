@@ -54,6 +54,7 @@ const defaultSlides = [
     title: 'Perasmian oleh',
     name: 'PUAN FERAWIKA BINTI KARNADY',
     role: 'PENGARAH URUSAN TADIKA INSPIRASI',
+    photo: 'images/fera.jpeg',
     placeholderLabel: 'Foto Puan Ferawika'
   },
   {
@@ -64,7 +65,7 @@ const defaultSlides = [
       'Mohamad Akasyah Faris Bin Mohamad Aiman (4 tahun)',
       'Muhammad Aariz Idraki Bin Amirul Aiman (5 tahun)',
       'Haris Aiman bin Muhammad Ariff (6 tahun)',
-      'Ayra Maisarah binti Nazuar Ariff'
+      //'Ayra Maisarah binti Nazuar Ariff'
     ],
     confetti: true
   },
@@ -75,6 +76,7 @@ const defaultSlides = [
     performer: 'PELAJAR 4 TULIP',
     teacher: 'NOOR FATIN ZULAIKHA BINTI SAIFUL BAHARI',
     nickname: 'TEACHER FATIN',
+    photo: 'images/fatin.png',
     confetti: true
   },
 
@@ -127,20 +129,19 @@ const defaultSlides = [
   },
   // 4 Tahun
   { type: 'sub_header', badge: 'KATEGORI UMUR', title: '4 TAHUN', subtitle: 'Anugerah Kedudukan Terbaik Mengikut Kelas' },
-  { type: 'award_photo', badge: 'KEDUDUKAN TERBAIK • 4 TAHUN', awardTitle: 'TEMPAT KETIGA (4 TAHUN)', name: 'NAMA PENERIMA', placeholderLabel: 'Tempat Ke-3 (4T)', confetti: true },
-  { type: 'award_photo', badge: 'KEDUDUKAN TERBAIK • 4 TAHUN', awardTitle: 'TEMPAT KEDUA (4 TAHUN)', name: 'NAMA PENERIMA', placeholderLabel: 'Tempat Ke-2 (4T)', confetti: true },
   { type: 'award_photo', badge: 'KEDUDUKAN TERBAIK • 4 TAHUN', awardTitle: 'TEMPAT PERTAMA (4 TAHUN)', name: 'NAMA PENERIMA', placeholderLabel: 'Tempat Pertama (4T)', confetti: true },
+  { type: 'award_photo', badge: 'KEDUDUKAN TERBAIK • 4 TAHUN', awardTitle: 'TEMPAT KEDUA (4 TAHUN)', name: 'NAMA PENERIMA', placeholderLabel: 'Tempat Ke-2 (4T)', confetti: true },
+  { type: 'award_photo', badge: 'KEDUDUKAN TERBAIK • 4 TAHUN', awardTitle: 'TEMPAT KETIGA (4 TAHUN)', name: 'NAMA PENERIMA', placeholderLabel: 'Tempat Ke-3 (4T)', confetti: true },
   // 5 Tahun
   { type: 'sub_header', badge: 'KATEGORI UMUR', title: '5 TAHUN', subtitle: 'Anugerah Kedudukan Terbaik Mengikut Kelas' },
-  { type: 'award_photo', badge: 'KEDUDUKAN TERBAIK • 5 TAHUN', awardTitle: 'TEMPAT KETIGA (5 TAHUN)', name: 'NAMA PENERIMA', placeholderLabel: 'Tempat Ke-3 (5T)', confetti: true },
-  { type: 'award_photo', badge: 'KEDUDUKAN TERBAIK • 5 TAHUN', awardTitle: 'TEMPAT KEDUA (5 TAHUN)', name: 'NAMA PENERIMA', placeholderLabel: 'Tempat Ke-2 (5T)', confetti: true },
   { type: 'award_photo', badge: 'KEDUDUKAN TERBAIK • 5 TAHUN', awardTitle: 'TEMPAT PERTAMA (5 TAHUN)', name: 'NAMA PENERIMA', placeholderLabel: 'Tempat Pertama (5T)', confetti: true },
+  { type: 'award_photo', badge: 'KEDUDUKAN TERBAIK • 5 TAHUN', awardTitle: 'TEMPAT KEDUA (5 TAHUN)', name: 'NAMA PENERIMA', placeholderLabel: 'Tempat Ke-2 (5T)', confetti: true },
+  { type: 'award_photo', badge: 'KEDUDUKAN TERBAIK • 5 TAHUN', awardTitle: 'TEMPAT KETIGA (5 TAHUN)', name: 'NAMA PENERIMA', placeholderLabel: 'Tempat Ke-3 (5T)', confetti: true },
   // 6 Tahun
   { type: 'sub_header', badge: 'KATEGORI UMUR', title: '6 TAHUN', subtitle: 'Anugerah Kedudukan Terbaik Mengikut Kelas' },
-  { type: 'award_photo', badge: 'KEDUDUKAN TERBAIK • 6 TAHUN', awardTitle: 'TEMPAT KETIGA (6 TAHUN)', name: 'NAMA PENERIMA', placeholderLabel: 'Tempat Ke-3 (6T)', confetti: true },
-  { type: 'award_photo', badge: 'KEDUDUKAN TERBAIK • 6 TAHUN', awardTitle: 'TEMPAT KEDUA (6 TAHUN)', name: 'NAMA PENERIMA', placeholderLabel: 'Tempat Ke-2 (6T)', confetti: true },
   { type: 'award_photo', badge: 'KEDUDUKAN TERBAIK • 6 TAHUN', awardTitle: 'TEMPAT PERTAMA (6 TAHUN)', name: 'NAMA PENERIMA', placeholderLabel: 'Tempat Pertama (6T)', confetti: true },
-
+  { type: 'award_photo', badge: 'KEDUDUKAN TERBAIK • 6 TAHUN', awardTitle: 'TEMPAT KEDUA (6 TAHUN)', name: 'NAMA PENERIMA', placeholderLabel: 'Tempat Ke-2 (6T)', confetti: true },
+  { type: 'award_photo', badge: 'KEDUDUKAN TERBAIK • 6 TAHUN', awardTitle: 'TEMPAT KETIGA (6 TAHUN)', name: 'NAMA PENERIMA', placeholderLabel: 'Tempat Ke-3 (6T)', confetti: true },
   // 42-43: Persembahan Pertengahan
   {
     type: 'performance_single',
@@ -149,7 +150,14 @@ const defaultSlides = [
     performer: 'PELAJAR 5 HIBISCUS DAN 6 RAFFLESIA',
     teacher: 'PUAN FERAWIKA BINTI KARNADY',
     nickname: 'TEACHER FERA',
+    photo: 'images/fera.jpeg',
     confetti: true
+  },
+  {
+    type: 'video_slide',
+    badge: 'VIDEO PERSEMBAHAN',
+    title: 'VIDEO LAGU PERSEMBAHAN',
+    videoSrc: 'videos/westlife.mp4'
   },
   {
     type: 'performance_single',
@@ -158,6 +166,7 @@ const defaultSlides = [
     performer: 'PELAJAR 5 HIBISCUS DAN 6 RAFFLESIA',
     teacher: 'PUAN FERAWIKA BINTI KARNADY',
     nickname: 'TEACHER FERA',
+    photo: 'images/fera.jpeg',
     confetti: true
   },
 
@@ -190,6 +199,7 @@ const defaultSlides = [
     performer: 'PELAJAR 4 TULIP',
     teacher: 'NOOR FATIN ZULAIKHA BINTI SAIFUL BAHARI',
     nickname: 'TEACHER FATIN',
+    photo: 'images/fatin.png',
     confetti: true
   },
   {
@@ -209,19 +219,18 @@ const defaultSlides = [
     title: 'Penyampaian Cenderahati & Penghargaan',
     subtitle: 'Tetamu VIP & Barisan Guru Tadika Inspirasi'
   },
-  { type: 'sub_header', badge: 'PENGHARGAAN KHAS', title: 'Tetamu VIP', subtitle: 'Pengelola Tadika Inspirasi' },
-  { type: 'staff_photo', badge: 'TETAMU VIP', name: 'ENCIK MOHAMAD AIMAN BIN MOHAMAD ASRI', role: 'PENGELOLA 1', placeholderLabel: 'Encik Mohamad Aiman' },
-  { type: 'staff_photo', badge: 'TETAMU VIP', name: 'ENCIK MOHAMAD ANUAR BIN MOHAMAD ASRI', role: 'PENGELOLA 2', placeholderLabel: 'Encik Mohamad Anuar' },
+ { type: 'sub_header', badge: 'PENGHARGAAN KHAS', title: 'Tetamu VIP', subtitle: 'Pengelola Tadika Inspirasi' },
+  { type: 'staff_photo', badge: 'TETAMU VIP', name: 'ENCIK MOHAMAD AIMAN BIN MOHAMAD ASRI', role: 'PENGELOLA 1', photo: 'images/aiman.jpeg', placeholderLabel: 'Encik Mohamad Aiman' },
+  { type: 'staff_photo', badge: 'TETAMU VIP', name: 'ENCIK MOHAMAD ANUAR BIN MOHAMAD ASRI', role: 'PENGELOLA 2', photo: 'images/ustaz_1.png', placeholderLabel: 'Encik Mohamad Anuar' },
 
   { type: 'sub_header', badge: 'PENGHARGAAN WARGA PENDIDIK', title: 'Pengurusan Tertinggi & Guru', subtitle: 'Tadika Inspirasi 2026' },
-  { type: 'staff_photo', badge: 'PENGURUSAN TERTINGGI', name: 'PUAN FERAWIKA BINTI KARNADY', role: 'PENGARAH URUSAN', placeholderLabel: 'Puan Ferawika' },
+  { type: 'staff_photo', badge: 'PENGURUSAN TERTINGGI', name: 'PUAN FERAWIKA BINTI KARNADY', role: 'PENGARAH URUSAN', photo: 'images/fera.jpeg', placeholderLabel: 'Puan Ferawika' },
   { type: 'staff_photo', badge: 'PENGHARGAAN GURU', name: 'AIMAN SYAFIQAH BINTI HILMI AZMAN', role: 'GURU', placeholderLabel: 'Teacher Aiman' },
-  { type: 'staff_photo', badge: 'PENGHARGAAN GURU', name: 'NOOR FATIN ZULAIKHA BINTI SAIFUL BAHARI', role: 'GURU', placeholderLabel: 'Teacher Fatin' },
+  { type: 'staff_photo', badge: 'PENGHARGAAN GURU', name: 'NOOR FATIN ZULAIKHA BINTI SAIFUL BAHARI', role: 'GURU', photo: 'images/fatin.png', placeholderLabel: 'Teacher Fatin' },
   { type: 'staff_photo', badge: 'PENGHARGAAN GURU', name: 'FAIRUZ BINTI AHMAD ANUAR', role: 'GURU PEMBIMBING', placeholderLabel: 'Teacher Fairuz' },
-  { type: 'staff_photo', badge: 'PENGHARGAAN GURU', name: 'NORLAILATULAILA BINTI IBRAHIM', role: 'GURU PEMBIMBING', placeholderLabel: 'Teacher Norlailatulaila' },
-  { type: 'staff_photo', badge: 'PENGHARGAAN GURU', name: 'NUR ZULAIKA SYAZWANI BINTI CHE RONI', role: 'GURU PEMBIMBING', placeholderLabel: 'Teacher Zulaika' },
-  { type: 'staff_photo', badge: 'PENGHARGAAN GURU', name: '`AMNI IZZATI BINTI ZAINORIN', role: 'GURU PEMBIMBING', placeholderLabel: 'Teacher `Amni' },
-
+  { type: 'staff_photo', badge: 'PENGHARGAAN GURU', name: 'NORLAILATULAILA BINTI IBRAHIM', role: 'GURU PEMBIMBING', photo: 'images/laila.jpeg', placeholderLabel: 'Teacher Norlailatulaila' },
+  { type: 'staff_photo', badge: 'PENGHARGAAN GURU', name: 'NUR ZULAIKA SYAZWANI BINTI CHE RONI', role: 'GURU PEMBIMBING', photo: 'images/zulaika.png', placeholderLabel: 'Teacher Zulaika' },
+  { type: 'staff_photo', badge: 'PENGHARGAAN GURU', name: '`AMNI IZZATI BINTI ZAINORIN', role: 'GURU PEMBIMBING', photo: 'images/amni.jpeg', placeholderLabel: 'Teacher `Amni' },
   // 71-72: Anugerah Bapa Mithali 2026
   {
     type: 'section_header',
@@ -254,6 +263,7 @@ const defaultSlides = [
     performer: 'PELAJAR 4 TULIP, 5 HIBISCUS DAN 6 RAFFLESIA',
     teacher: 'PUAN FERAWIKA BINTI KARNADY',
     nickname: 'TEACHER FERA',
+    photo: 'images/fera.jpeg',
     confetti: true
   },
   {
@@ -329,12 +339,11 @@ function renderSlide(index) {
   } else if (s.type === 'person_simple') {
     html = `
       <div class="slide-card glass-panel p-10 md:p-16">
-        <div class="w-20 h-20 rounded-full bg-amber-50 border-2 border-amber-200 flex items-center justify-center mb-6 shadow-sm">
-          <i class="fa-solid ${s.icon} text-3xl text-amber-700"></i>
+        <div class="w-44 h-44 md:w-52 md:h-52 rounded-full bg-white border-4 border-amber-200 flex items-center justify-center mb-6 shadow-lg overflow-hidden p-1.5">
+          <img src="images/ustaz_1.png" alt="Ustaz Mohamad Anuar" class="w-full h-full object-cover object-top rounded-full" onerror="this.src='https://img.icons8.com/color/144/muslim-man.png'" />
         </div>
         <span class="px-4 py-1 rounded-full bg-amber-100/80 text-amber-800 text-xs font-bold tracking-widest uppercase mb-4" data-editable="badge">${s.badge}</span>
-        <h2 class="text-xl md:text-2xl font-semibold text-stone-500 mb-3" data-editable="title">${s.title}</h2>
-        <h1 class="font-serif-display text-4xl md:text-6xl font-bold text-stone-800 mb-4" data-editable="name">${s.name}</h1>
+        <h1 class="font-serif-display text-4xl md:text-6xl font-bold text-stone-800 mb-3" data-editable="name">${s.name}</h1>
         <p class="text-emerald-700 font-semibold text-base md:text-lg" data-editable="role">${s.role}</p>
       </div>
     `;
@@ -379,10 +388,27 @@ function renderSlide(index) {
         <div class="px-6 py-2.5 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-900 font-extrabold text-xl md:text-2xl mb-6" data-editable="performer">
           ${s.performer}
         </div>
-        <div class="bg-white/75 border border-stone-200/80 rounded-2xl px-6 py-4 max-w-2xl">
-          <p class="text-xs font-bold uppercase tracking-wider text-stone-400 mb-1">Guru Pembimbing</p>
-          <p class="font-bold text-stone-800 text-base md:text-lg" data-editable="teacher">${s.teacher}</p>
-          <p class="text-rose-700 font-semibold text-sm mt-0.5" data-editable="nickname">(${s.nickname})</p>
+        <div class="bg-white/85 border border-stone-200/80 rounded-2xl px-6 py-4 max-w-2xl inline-flex items-center gap-4 shadow-sm ${s.photo ? 'text-left' : 'text-center'}">
+          ${s.photo ? `
+            <div class="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-rose-200 overflow-hidden flex-shrink-0 bg-rose-50 shadow-sm">
+              <img src="${s.photo}" alt="${s.teacher}" class="w-full h-full object-cover object-center scale-125 translate-y-2" />
+            </div>
+          ` : ''}
+          <div>
+            <p class="text-xs font-bold uppercase tracking-wider text-stone-400 mb-1">Guru Pembimbing</p>
+            <p class="font-bold text-stone-800 text-base md:text-lg" data-editable="teacher">${s.teacher}</p>
+            <p class="text-rose-700 font-semibold text-sm mt-0.5" data-editable="nickname">(${s.nickname})</p>
+          </div>
+        </div>
+      </div>
+    `;
+    } else if (s.type === 'video_slide') {
+    html = `
+      <div class="slide-card glass-panel p-6 md:p-10">
+        <span class="px-4 py-1 rounded-full bg-rose-100 text-rose-800 text-xs font-bold tracking-widest uppercase mb-3" data-editable="badge">${s.badge}</span>
+        <h1 class="font-serif-display text-3xl md:text-4xl font-bold text-stone-800 mb-5" data-editable="title">${s.title}</h1>
+        <div class="w-full max-w-4xl aspect-video rounded-3xl overflow-hidden border-4 border-white shadow-xl bg-black">
+          <video src="${s.videoSrc}" controls playsinline class="w-full h-full object-contain"></video>
         </div>
       </div>
     `;
@@ -401,7 +427,7 @@ function renderSlide(index) {
     html = `
       <div class="slide-card glass-panel p-12 md:p-16">
         <span class="px-5 py-1.5 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold tracking-widest uppercase mb-5" data-editable="badge">${s.badge}</span>
-        <h1 class="font-serif-display text-6xl md:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-rose-700 to-emerald-700 mb-4" data-editable="title">${s.title}</h1>
+        <h1 class="text-6xl md:text-8xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-rose-700 to-emerald-700 mb-4" data-editable="title">${s.title}</h1>
         <p class="text-stone-600 text-xl md:text-2xl font-semibold" data-editable="subtitle">${s.subtitle}</p>
       </div>
     `;
